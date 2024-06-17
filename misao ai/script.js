@@ -13,81 +13,37 @@ const perguntas = [
                 texto: "Isso é maravilhoso!",
                 afirmacao: "afirmacao"
             }
-            
-        
-            
-        ]
+             ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
-        alternativas: [ 
-
-            {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-
-                afirmacao: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema."
-
-            },  
-            {
-                texto:  "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-
-                afirmacao:  "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema."
-
-            },
-
-            
-        ]
-    },
-    {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
-
-        alternativas: [   {
-            texto:  "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-           afirmacao:  "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores."
-         },
-         { texto:  "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-         afirmacao:  "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores."
-       },
-         
-            
-    ]
-    },
-    {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+         enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
         alternativas: [
             {
-         texto:   "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-         afirmacao:   "Criar uma imagem utilizando um gerador de imagem de IA."
+         texto:   "quanto tempo dura uma partida de futebol= 90 minutos divididos em duas parte de 45 minutos",
+         afirmacao: "afirmacao"
          
         },
-        {
-            texto:   "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-            afirmacao:   "Criar uma imagem utilizando um gerador de imagem de IA."
-            
-           },
-
-
-
-        ]
+        { 
+          texto:"quando foi realizada a primeira copa do mundo de futebol= em13 de julho de 1930 no uruguai",
+            afirmacao:"afirmacao"
+         }
+  ]
     },
     {
         enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
         alternativas: [
             {
-
-
-         texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-         afirmacao:   "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial."
+                 texto: "qual tme de futebol ganhou mais copas do mundo = brasl 5",
+                 afirmacao: "afirmacao"
         }, 
         {
 
-
-            texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-            afirmacao:   "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial."
+            texto: "quantos jogadores um time de futebol tem =11", 
+            afirmacao:"afirmacao" 
            }, 
        
     
-        ]
+        ] 
     
     
     }
@@ -112,6 +68,7 @@ function mostraAlternativas(){
             botaoAlternativas.textContent = alternativa.texto;
             botaoAlternativas.addEventListener("click", ()=>repostaselecionadd(alternativa))
              caixaAlternativas.appendChild(botaoAlternativas);
+             
     }
 }
  function respostaSelecionada(opcaoSelecionada){
